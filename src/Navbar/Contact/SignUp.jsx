@@ -28,7 +28,20 @@ const SignUpForm = () => {
 			
 
 		}
+
 	}
+	const {fname, lname, email, password, cpassword} = signupData
+	const setupLogin = () => {
+		localStorage.setItem('fname', fname)
+		localStorage.setItem('lname', lname)
+		localStorage.setItem('email', email)
+		localStorage.setItem('password', password)
+		localStorage.setItem('cpassword', cpassword)
+
+		alert("Registration is done successfully!👍")
+		
+	}
+	localStorage.getItem('fname')
 
     return(<>
 
@@ -122,6 +135,7 @@ const SignUpForm = () => {
 							</div>
 							<div className="mb-6 text-center">
 								<button
+									onClick={setupLogin}
 									className="w-full button-color bg-[#111827] hover:bg-[#0d131f]  font-mono px-4 py-2 font-bold text-white rounded-full  focus:outline-none focus:shadow-outline"
 									type="button"
 								>

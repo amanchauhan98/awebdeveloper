@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Contact = () => {
     return (<>
@@ -24,6 +24,21 @@ const Login = () => {
     // const changeSignUp = () => {
     //   return null;
     // }
+
+    const navigate = useNavigate()
+    const loginDone = () => {
+      const email = localStorage.getItem('email');
+      const password = localStorage.getItem('password');
+      if(email != data.email && password != data.password){
+        alert("username or password is incorrect!")
+        navigate('contact')
+      }
+      if(email == data.email && password == data.password){
+        localStorage.setItem('login',true)
+        navigate('/')
+      }
+    }
+    
     
     
     return (<>
@@ -37,7 +52,7 @@ const Login = () => {
         <input onChange={changeLogin} name="email" value={data.email} type="text" class="border font-mono rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
         <label  class="font-semibold text-sm text-gray-600 pb-1 block font-mono">Password</label>
         <input type="password" onChange= {changeLogin} name="password" value={data.password} class="border font-mono rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full" />
-        <button type="button" class="transition duration-200 bg-[#111827] hover:bg-[#0d131f] focus:[#0d131f] focus:shadow-sm focus:ring-4 active:bg-white active:text-[#0d131f]  text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">
+        <button onClick={loginDone} type="button" class="transition duration-200 bg-[#111827] hover:bg-[#0d131f] focus:[#0d131f] focus:shadow-sm focus:ring-4 active:bg-white active:text-[#0d131f]  text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block">
             <span class="inline-block mr-2 font-mono">Login</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 inline-block">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />

@@ -12,56 +12,56 @@ const Gallery1 = [
     {
         id:1,
         img : img1,
-        subtitle : "HTML",
-        desc : "this is a html certificate"
+        subtitle : "Google",
+        desc : "This is a Google Ad Sense Certificate"
     },
     {
         id:2,
         img : img2,
         subtitle : "HTML",
-        desc : "this is a html certificate"
+        desc : "This is a html certificate from Great Learning"
     },
     {
         id:3,
         img : img3,
-        subtitle : "HTML",
-        desc : "this is a html certificate"
+        subtitle : "CSS3",
+        desc : "This is a CSS3 Certificate from Great Learning"
     },
     {
         id:4,
         img : img4,
-        subtitle : "HTML",
-        desc : "this is a html certificate"
+        subtitle : "Hackthon",
+        desc : "This is a Hackthon certificate from ACEM"
     },
     {
         id:5,
         img : img5,
-        subtitle : "HTML",
-        desc : "this is a html certificate"
+        subtitle : "SkyScanner",
+        desc : "This is a Internship Certificate from Sky Scanner"
     },
     {
         id:6,
         img : img6,
-        subtitle : "HTML",
-        desc : "this is a html certificate"
+        subtitle : "Let's Upgrade",
+        desc : "This is a JavaScript Certificate from Let's Upgrade"
     },
     {
         id:7,
         img : img7,
-        subtitle : "HTML",
-        desc : "this is a html certificate"
+        subtitle : "Great Learning",
+        desc : "This is a React.js Certificate from Great Learning"
     },
     {
         id:8,
         img : img8,
-        subtitle : "HTML",
-        desc : "this is a html certificate"
+        subtitle : "Open Weaver",
+        desc : "This is a Basic of JavaScript Certificate from Open Weaver"
     },
     {
         id:9,
         img : img9,
-        subtitle : "HTML",
-        desc : "this is a html certificate"
+        subtitle : "Twitter",
+        desc : "This is a Get Started on Twitter Certificate from Twitter"
     },
 
 ]

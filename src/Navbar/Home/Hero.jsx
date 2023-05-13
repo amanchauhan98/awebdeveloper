@@ -25,7 +25,7 @@ const Hero = () => {
                             </div>
                         </div>
                         <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                            <p class="leading-relaxed md:text-lg text-[0.95rem] font-mono mb-4 ">Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
+                            <p class="leading-relaxed md:text-lg text-[0.95rem] font-mono mb-4 ">Hello to every one , My name is <span className='text-sky-500'>Aman Chauhan</span> and i am a <b>Frontend Developer</b> I learned so many Programming language in my learning period like , HTML5, CSS3, JavaScript, Jquery, Tailwind CSS Utility class framework  and React.js. i am also have a good knowledge about basic of Python and their modules likes Tkinter, Django, OS etc. I created so many clone projects with the help of a Tailwind CSS, Like Youtube Home page , Microsoft official website, Mercedes official website, Audi official website, samsung website etc.. I also have knowledge about C, C++, and Java Programming language. I have also a good knowledge about Data Structure and Algorithm (DSA) using JavaScript.  </p>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ const Hero = () => {
 const VideoDiv = () => {
     return (<>
         <div className='md:my-[2rem] md:mx-[2rem] mx-2 my-4 md:h-[30rem] md:w-[80rem] drop-shadow-2xl '>
-            <video className='md:h-[30rem] md:w-[80rem] ' controls autoPlay loop muted>
+            <video className='md:h-[30rem] md:w-[80rem] ' autoPlay loop muted>
                 <source src={introVideo} type="video/mp4"/>
                     <source src="movie.ogg" type="video/ogg"/>
                         Your browser does not support the video tag.

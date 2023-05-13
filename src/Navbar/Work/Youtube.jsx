@@ -2,10 +2,6 @@ import React from 'react'
 import Youtubeitem from './Youtubeitem';
 import YoutubeApi from './YoutubeApi';
 
-
-
-
-
 const Youtube = () => {
     return <>
     <div className='h-screen w-auto overflow-auto relative md:my-[2rem] md:mx-[2rem]  drop-shadow-xl rounded-lg  md:shadow-xl md:shadow-gray-400'>
@@ -33,27 +29,27 @@ const Sidebar = () => {
                         return <li onClick={(obj)=>{
                            let elemId =  obj.target.id
                             console.log(elemId);
-                            let i =0;
-                            while (i < YoutubeApi.length) {
-                                console.log(YoutubeApi[i].id)
-                                if(elemId === YoutubeApi[i].id){
-                                    console.log("ander hu")
-                                }
-                                i++;
-                            }
+                            // let i =1;
+                            // while (i < YoutubeApi.length) {
+                            //     console.log(YoutubeApi[i].id)
+                            //     if(elemId === YoutubeApi[i].id){
+                            //         console.log("ander hu")
+                            //     }
+                            //     i++;
+                            // }
                             
                            
-                        //    for(let i = 0 ; i<YoutubeApi.length-1; i++){
-                        //     console.log(YoutubeApi[i].id)
-                        //        if(elemId == YoutubeApi[i].id){
-                        //            return <>
-                        //            { console.log("return ke ander")}
-                        //         <Youtubelink iframe = {YoutubeApi[i].iFrame} />
-                        //         <Code code = {YoutubeApi[i].Code}/>
-                        //         </>
-                        //     }
+                           for(let i = 0 ; i<YoutubeApi.length-1; i++){
+                            console.log(YoutubeApi[i].id)
+                               if(elemId == YoutubeApi[0].id){
+                                   return <>
+                                   { console.log("return ke ander")}
+                                <Youtubelink iframe = {YoutubeApi[i].iFrame} />
+                                <Code code = {YoutubeApi[i].Code}/>
+                                </>
+                            }
                             
-                        //    }
+                           }
                         }} key={data.id} className='md:px-1 md:py-1 md:bg-sky-500 md:hover:bg-sky-600 md:active:bg-sky-700 md:text-lg md:rounded-lg'>{data.title}</li> 
                         
                     })

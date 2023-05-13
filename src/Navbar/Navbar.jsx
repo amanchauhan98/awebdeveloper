@@ -8,6 +8,7 @@ import Index from './Home/Index';
 import Menu from './Home/Menu';
 import SampleQuesPaper from './Work/SampleQuesPaper';
 import Work from './Work/Work';
+import Protected from './Protected';
 
 
 
@@ -17,13 +18,13 @@ const Navbar = () => {
     <>
     <Menu/>
         <Routes>
-            <Route index path='/' element={<Index/>}/>
-            <Route  path='/work' element={<Work/>}/>
-            <Route index path='/gallery' element={<Gallery/>}/>
+            <Route index path='/' element={<Protected Component={Index} />}/>
+            <Route  path='/work' element={<Protected Component={Work} />}/>
+            <Route index path='/gallery' element={<Protected Component={Gallery} />}/>
             <Route index path='/contact' element={<Contact/>}/>
             <Route index path='/signup' element={<SignUp/>}/>
-            <Route index path='/work/:samplepaper' element={<SampleQuesPaper/>}/>
-            <Route path='*' element={<ErrorPage/>}/>
+            <Route index path='/work/:samplepaper' element={<Protected Component={SampleQuesPaper} />}/>
+            <Route path='*' element={<ErrorPage/>} />
            
         </Routes>
     </>

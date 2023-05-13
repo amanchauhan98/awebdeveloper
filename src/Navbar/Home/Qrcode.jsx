@@ -1,6 +1,12 @@
 import React from 'react'
 import { ProgrammingHead } from '../Work/Cards';
-import telegram from '../images/telegramqr.png';
+import telegram from '../images/telegramqrcode.png';
+import facebook from '../images/fbqrcode.png';
+import youtube from '../images/ytqrcode.png';
+import github from '../images/githubqrcode.png';
+import instagram from '../images/instaqrcode.png';
+import linkedin from '../images/linkedinqrcode.png';
+
 import { NavLink } from 'react-router-dom';
 
 const Qrcode = () => {
@@ -37,31 +43,37 @@ const SocialMedia_Api = [
         id:1,
         title : "Telegram",
         photo : telegram,
-        link : "/",
+        link : "https://web.telegram.org/z/#-1859573722",
     },
     {
         id:2,
         title : "Instagram",
-        photo : telegram,
-        link : "/",
+        photo : instagram,
+        link : "https://www.instagram.com/avinash_thakur9873/",
     },
     {
         id:3,
         title : "Facebook",
-        photo : telegram,
-        link : "/",
+        photo : facebook,
+        link : "https://www.facebook.com/profile.php?id=100012687511482",
     },
     {
         id:4,
         title : "Youtube",
-        photo : telegram,
-        link : "/",
+        photo : youtube,
+        link : "https://www.youtube.com/channel/UCp1tRt-bR_sldtCnKEKR2aw",
     },
     {
         id:5,
-        title : "What'sapp",
-        photo : telegram,
-        link : "/",
+        title : "Github",
+        photo : github,
+        link : "https://github.com/amanchauhan98",
+    },
+    {
+        id:6,
+        title : "LinkedIn",
+        photo : linkedin,
+        link : "https://www.linkedin.com/in/aman-chauhan-837006200/",
     },
 
 ]
